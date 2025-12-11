@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/lichang0716/gr-monitor/refs/heads/main/jd-efx8-monitor.js",
+    "cron": "*/1 * * * *",
+    "tag": "EF-8X 到货监控",
+    "enabled": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lichang0716/gr-monitor/refs/heads/main/gr-monitor.js",
+    "cron": "*/5 * * * *",
+    "tag": "GR 到货监控",
+    "enabled": true
+  },
+]
