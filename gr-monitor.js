@@ -34,6 +34,7 @@ async function checkGR() {
       await sendTG(msg);
     } else {
       const msg = "⛔ 心跳正常：过去 5 分钟未发现 GR III / IIIx。";
+      $notify("GR 监控", "", msg);
       await sendTG(msg);
     }
   } catch (e) {
