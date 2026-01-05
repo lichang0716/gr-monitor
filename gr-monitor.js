@@ -51,7 +51,8 @@ async function checkGR() {
     const errText = e && typeof e === 'object'
     ? JSON.stringify(e, Object.getOwnPropertyNames(e), 2)
     : String(e);
-  await sendTG('❌ 监控失败：\n' + errText);
+    $notify('❌ GR 监控失败', '页面检测', errText);
+    await sendTG('❌ 监控失败：\n' + errText);
   }
 
   $done();
