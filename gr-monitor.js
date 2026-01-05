@@ -44,7 +44,7 @@ async function checkGR() {
     } else {
       // 页面未出现目标型号，发送“心跳通知”，确认定时任务正常
       msg = 'ℹ️ GR 页面监控正常运行，但未检测到 III 或 IIIx';
-      $notify('GR 监控心跳', '定时任务正常', msg);
+      // $notify('GR 监控心跳', '定时任务正常', msg);
       await sendTG(msg);
     }
   } catch (e) {
