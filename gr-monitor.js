@@ -48,7 +48,10 @@ async function checkGR() {
       // await sendTG(msg);
     }
   } catch (e) {
-    await sendTG('❌ 监控失败：' + e.message);
+    const errText = e && typeof e === 'object'
+    ? JSON.stringify(e, Object.getOwnPropertyNames(e), 2)
+    : String(e);
+  await sendTG('❌ 监控失败：\n' + errText);
   }
 
   $done();
